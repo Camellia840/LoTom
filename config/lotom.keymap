@@ -31,11 +31,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp BACKSPACE
-&kp TAB     &kp Q          &kp W             &kp E           &kp R        &kp T             &kp BACKSLASH      &kp Y            &kp U         &kp I              &kp O    &kp P
-&kp A       &kp S          &kp D             &kp F           &kp G        &kp G             &kp BACKSLASH      &kp H            &kp J         &kp K              &kp L    &kp RET
-&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N            &kp M         &kp COMMA          &kp DOT  &lt 2 SLASH
-&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE  &kp LG(SPACE)     &kp ENTER          &lt 3 BACKSPACE  &lt 2 ESCAPE  &kp RIGHT_BRACKET
+&kp ESCAPE      &kp BACKSPACE
+&kp TAB         &kp Q          &kp W         &kp E               &kp R        &kp T          &kp BACKSLASH      &kp Y                &kp U         &kp I             &kp O    &kp P
+&mo 2           &kp A          &kp S         &kp D               &kp F        &kp G          &kp BACKSLASH      &kp H                &kp J         &kp K             &kp L    &kp RET
+&kp LEFT_SHIFT  &kp Z          &kp X         &kp C               &kp V        &kp B          &kp RIGHT_BRACKET  &kp N                &kp M         &kp COMMA         &kp DOT  &kp LEFT_SHIFT
+&kp LCTRL       &kp LEFT_GUI   &kp LEFT_ALT  &lt 4 INT_MUHENKAN  &lt 4 SPACE  &kp LG(SPACE)  &kp BACKSPACE      &kp INTERNATIONAL_4  &lt 2 ESCAPE  &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <
