@@ -30,7 +30,7 @@
         new_macro_kagikakko: new_macro_kagikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_4 &kp RIGHT_BRACE &kp NON_US_HASH &kp RET &kp LEFT_ARROW>;
+            bindings = <&kp INTERNATIONAL_4 &kp LS(H) &kp E &kp L &kp L &kp O>;
             label = "NEW_MACRO_KAGIKAKKO";
         };
     };
