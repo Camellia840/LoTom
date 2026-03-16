@@ -33,6 +33,13 @@
             bindings = <&kp INTERNATIONAL_4 &kp RIGHT_BRACKET &kp LS(H) &kp E &kp L &kp L &kp O &kp H &kp NON_US_HASH &kp G &kp ENTER &kp LEFT>;
             label = "NEW_MACRO_KAGIKAKKO";
         };
+
+        new_macro_browsnewtab: new_macro_browsnewtab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(T) &kp LC(V) &kp RETURN>;
+            label = "NEW_MACRO_BROWSNEWTAB";
+        };
     };
 
     keymap {
@@ -131,10 +138,10 @@
         BT {
             bindings = <
 &trans         &kp LA(F4)
-&kp LG(Q)      &kp LC(W)     &trans        &trans        &trans        &trans        &trans  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans        &kp LC(C)     &trans        &trans        &trans        &trans  &trans      &trans      &new_macro_kagikakko  &trans        &trans
-&trans         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans      &trans      &trans                &trans        &trans
-&trans         &trans        &trans        &trans        &trans        &trans        &trans  &trans      &trans      &trans
+&kp LG(Q)      &kp LC(W)     &trans        &trans        &trans        &trans        &trans  &bt BT_PRV  &bt BT_NXT              &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
+&kp LG(LS(Z))  &trans        &kp LC(C)     &trans        &trans        &trans        &trans  &trans      &new_macro_browsnewtab  &new_macro_kagikakko  &trans        &trans
+&trans         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans      &trans                  &trans                &trans        &trans
+&trans         &trans        &trans        &trans        &trans        &trans        &trans  &trans      &trans                  &trans
             >;
 
             sensor-bindings = <
