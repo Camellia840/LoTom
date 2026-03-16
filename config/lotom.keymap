@@ -30,7 +30,7 @@
         new_macro_kagikakko: new_macro_kagikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_4 &kp RIGHT_BRACKET &kp LS(H) &kp E &kp L &kp L &kp O &kp H &kp NON_US_HASH &kp G &kp ENTER &kp LEFT>;
+            bindings = <&kp INTERNATIONAL_4 &kp RIGHT_BRACKET &kp BACKSLASH &kp ENTER &kp LEFT>;
             label = "NEW_MACRO_KAGIKAKKO";
         };
 
@@ -130,10 +130,10 @@
         FUNCTION {
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION      &kp AT    &kp KP_EQUAL  &kp AMPERSAND  &kp TILDE  &trans  &trans    &trans       &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp STAR  &kp DOLLAR    &trans         &kp GRAVE  &trans  &kp HASH  &trans       &trans  &trans  &trans
-&trans  &kp SLASH         &kp EXCL  &trans        &trans         &trans     &trans  &trans    &kp PERCENT  &trans  &trans  &trans
-&trans  &trans            &trans    &trans        &trans         &trans     &trans  &trans    &trans       &trans
+&trans  &kp QUESTION      &kp AT    &trans      &kp AMPERSAND  &kp LS(EQUAL)  &trans  &trans    &trans       &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp STAR  &kp DOLLAR  &trans         &kp GRAVE      &trans  &kp HASH  &trans       &trans  &trans  &trans
+&trans  &kp SLASH         &kp EXCL  &kp APOS    &trans         &trans         &trans  &trans    &kp PERCENT  &trans  &trans  &trans
+&trans  &trans            &trans    &trans      &trans         &trans         &trans  &trans    &trans       &trans
             >;
 
             sensor-bindings = <
