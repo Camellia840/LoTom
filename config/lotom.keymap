@@ -104,7 +104,7 @@
             >;
         };
 
-        NUM {
+        NUMBER {
             bindings = <
 &trans            &trans
 &trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
@@ -134,7 +134,7 @@
             >;
         };
 
-        BT {
+        OTHERS {
             bindings = <
 &trans  &kp LA(F4)
 &trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
