@@ -122,9 +122,9 @@
         SYMBOL {
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION      &kp AT         &none       &kp AMPERSAND  &kp LS(EQUAL)  &trans  &kp INT_YEN  &trans       &trans  &kp RS(STAR)  &kp LS(N9)
-&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans         &kp GRAVE      &trans  &kp HASH     &trans       &trans  &trans        &trans
-&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI       &trans         &trans  &trans       &kp PERCENT  &trans  &trans        &trans
+&trans  &kp QUESTION      &kp AT         &none       &kp AMPERSAND  &kp LS(EQUAL)  &trans  &kp INT_YEN  &trans       &kp RS(STAR)  &kp RS(N9)  &kp BACKSLASH
+&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans         &kp GRAVE      &trans  &kp HASH     &trans       &trans        &trans      &trans
+&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI       &trans         &trans  &trans       &kp PERCENT  &trans        &trans      &trans
 &trans  &trans            &trans         &trans      &trans         &trans         &trans  &trans       &trans       &trans
             >;
 
