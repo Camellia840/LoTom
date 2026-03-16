@@ -89,7 +89,7 @@
             >;
         };
 
-        SCROLL {
+        CURSOR {
             bindings = <
 &trans       &trans
 &kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp END    &kp LC(R)  &kp LC(T)         &trans  &trans         &trans          &kp UP_ARROW      &trans           &trans
@@ -134,7 +134,7 @@
             >;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
 &trans  &trans
 &trans  &kp QUESTION      &kp AT         &none       &kp AMPERSAND  &kp LS(EQUAL)  &trans  &trans    &trans       &trans  &kp RS(STAR)  &kp LS(N9)
