@@ -130,10 +130,10 @@
         FUNCTION {
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION  &kp DOUBLE_QUOTES  &kp KP_EQUAL  &kp AMPERSAND  &kp TILDE  &trans  &trans    &trans       &trans  &trans  &trans
-&trans  &kp AT        &kp STAR           &kp DOLLAR    &trans         &kp GRAVE  &trans  &kp HASH  &trans       &trans  &trans  &trans
-&trans  &kp SLASH     &kp EXCL           &trans        &trans         &trans     &trans  &trans    &kp PERCENT  &trans  &trans  &trans
-&trans  &trans        &trans             &trans        &trans         &trans     &trans  &trans    &trans       &trans
+&trans  &kp QUESTION          &kp AT    &kp KP_EQUAL  &kp AMPERSAND  &kp TILDE  &trans  &trans    &trans       &trans  &trans  &trans
+&trans  &kp LS(LEFT_BRACKET)  &kp STAR  &kp DOLLAR    &trans         &kp GRAVE  &trans  &kp HASH  &trans       &trans  &trans  &trans
+&trans  &kp SLASH             &kp EXCL  &trans        &trans         &trans     &trans  &trans    &kp PERCENT  &trans  &trans  &trans
+&trans  &trans                &trans    &trans        &trans         &trans     &trans  &trans    &trans       &trans
             >;
 
             sensor-bindings = <
