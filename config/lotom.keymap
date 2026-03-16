@@ -116,10 +116,10 @@
         FUNCTION {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp QUESTION  &kp DOUBLE_QUOTES  &trans      &kp AMPERSAND  &kp TILDE  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &kp AT        &kp STAR           &kp DOLLAR  &trans         &trans     &trans  &kp HASH  &trans  &trans  &trans  &trans
+&trans  &trans        &trans             &trans      &trans         &trans     &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans        &trans             &trans      &trans         &trans     &trans  &trans    &trans  &trans
             >;
 
             sensor-bindings = <
