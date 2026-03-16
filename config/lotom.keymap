@@ -130,10 +130,10 @@
         FUNCTION {
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION          &kp AT    &kp KP_EQUAL  &kp AMPERSAND  &kp TILDE  &trans  &trans    &trans       &trans  &trans  &trans
-&trans  &kp LS(LEFT_BRACKET)  &kp STAR  &kp DOLLAR    &trans         &kp GRAVE  &trans  &kp HASH  &trans       &trans  &trans  &trans
-&trans  &kp SLASH             &kp EXCL  &trans        &trans         &trans     &trans  &trans    &kp PERCENT  &trans  &trans  &trans
-&trans  &trans                &trans    &trans        &trans         &trans     &trans  &trans    &trans       &trans
+&trans  &kp QUESTION      &kp AT    &kp KP_EQUAL  &kp AMPERSAND  &kp TILDE  &trans  &trans    &trans       &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp STAR  &kp DOLLAR    &trans         &kp GRAVE  &trans  &kp HASH  &trans       &trans  &trans  &trans
+&trans  &kp SLASH         &kp EXCL  &trans        &trans         &trans     &trans  &trans    &kp PERCENT  &trans  &trans  &trans
+&trans  &trans            &trans    &trans        &trans         &trans     &trans  &trans    &trans       &trans
             >;
 
             sensor-bindings = <
@@ -144,11 +144,11 @@
 
         BT {
             bindings = <
-&trans         &kp LA(F4)
-&kp LG(Q)      &kp LC(W)     &trans        &trans        &trans        &trans        &trans  &bt BT_PRV  &bt BT_NXT              &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans        &kp LC(C)     &trans        &trans        &trans        &trans  &trans      &new_macro_browsnewtab  &new_macro_kagikakko  &trans        &trans
-&trans         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans      &trans                  &trans                &trans        &trans
-&trans         &trans        &trans        &trans        &trans        &trans        &trans  &trans      &trans                  &trans
+&trans  &kp LA(F4)
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &bt BT_PRV  &bt BT_NXT              &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans      &new_macro_browsnewtab  &new_macro_kagikakko  &trans        &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL  &trans  &trans      &trans                  &trans                &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans      &trans                  &trans
             >;
 
             sensor-bindings = <
