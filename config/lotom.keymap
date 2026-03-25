@@ -59,14 +59,14 @@
     combos {
         compatible = "zmk,combos";
 
-        combo-alt1 {
-            bindings = <&kp LEFT_ALT>;
+        combo-right-click {
+            bindings = <&kp LS(F10)>;
             key-positions = <23 24>;
         };
 
-        combo-alt2 {
+        combo-alt1 {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <17 16>;
+            key-positions = <12 11>;
         };
     };
 
