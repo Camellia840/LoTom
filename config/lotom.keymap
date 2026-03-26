@@ -51,7 +51,7 @@
         new_macro_kakko: new_macro_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN &kp RS(STAR) &kp LS(N9) &kp LEFT_ARROW>;
+            bindings = <&kp INT_MUHENKAN &kp RS(STAR) &kp LS(N9) &kp LEFT_ARROW &kp INTERNATIONAL_4>;
             label = "NEW_MACRO_KAKKO";
         };
     };
