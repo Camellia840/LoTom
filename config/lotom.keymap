@@ -77,7 +77,7 @@
             bindings = <
 &lt 5 ESC       &kp MINUS
 &kp TAB         &kp Q         &kp W         &kp E               &kp R        &kp T                   &none                 &kp Y                &kp U        &kp I              &kp O    &kp P
-&mo 2           &kp A         &kp S         &lt 2 D             &lt 1 F      &lt 4 G                 &new_macro_kakko      &lt 4 H              &kp J        &kp K              &kp L    &kp RET
+&mo 2           &kp A         &kp S         &lt 2 D             &kp F        &lt 4 G                 &new_macro_kakko      &lt 4 H              &kp J        &kp K              &kp L    &kp RET
 &kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V        &kp B                   &new_macro_kagikakko  &kp N                &kp M        &kp COMMA          &kp DOT  &kp LEFT_SHIFT
 &kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &lt 3 INT_MUHENKAN  &lt 3 SPACE  &new_macro_browsnewtab  &kp BACKSPACE         &kp INTERNATIONAL_4  &kp LS(F10)  &kp RIGHT_CONTROL
             >;
@@ -91,10 +91,10 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP      &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &kp PG_UP      &trans    &trans
+&trans  &trans  &trans  &trans  &mkp MB1  &trans  &trans  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &trans    &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans
             >;
 
             sensor-bindings = <
