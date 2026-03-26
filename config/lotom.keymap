@@ -68,6 +68,11 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <12 11>;
         };
+
+        combo-alt2 {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <4 5>;
+        };
     };
 
     keymap {
