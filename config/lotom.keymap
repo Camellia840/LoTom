@@ -151,10 +151,10 @@
         OTHERS {
             bindings = <
 &trans  &kp LA(F4)
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &kp LA(LC(U))  &kp LA(LC(A))  &kp LA(LC(C))  &kp LA(LC(B))  &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans         &trans         &trans         &trans         &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans         &trans         &trans         &trans         &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans         &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &kp LA(LC(U))  &kp LA(LC(A))  &kp LA(LC(C))  &kp LA(LC(B))
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans         &trans         &trans         &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans         &trans         &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans         &trans
             >;
 
             sensor-bindings = <
