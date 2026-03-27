@@ -5,6 +5,9 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
+#define JP_PIPE         LS(0x89)          // |
+#define JP_UNDERSCORE   LS(0x87)          // _
+
 / {
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -141,10 +144,10 @@
         SYMBOL {
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)  &trans  &kp INT_YEN  &trans       &kp RS(STAR)  &kp RS(N9)  &kp BACKSLASH
-&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp GRAVE      &trans  &kp HASH     &trans       &trans        &trans      &trans
-&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &trans         &trans  &trans       &kp PERCENT  &trans        &trans      &trans
-&trans  &trans            &trans         &trans      &trans            &trans         &trans  &trans       &trans       &trans
+&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)  &trans  &kp INT_YEN  &kp JP_UNDERSCORE    &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
+&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp GRAVE      &trans  &kp HASH     &trans               &trans        &trans      &trans
+&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &trans         &trans  &trans       &kp PERCENT          &trans        &trans      &trans
+&trans  &trans            &trans         &trans      &trans            &trans         &trans  &trans       &trans               &trans
             >;
 
             sensor-bindings = <
