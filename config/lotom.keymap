@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-
 #define JP_PIPE         LS(0x89)          // |
 #define JP_UNDERSCORE   LS(0x87)          // _
 
@@ -56,6 +55,13 @@
             #binding-cells = <0>;
             bindings = <&kp INT_MUHENKAN &kp RS(STAR) &kp LS(N9) &kp LEFT_ARROW &kp INTERNATIONAL_4>;
             label = "NEW_MACRO_KAKKO";
+        };
+
+        new_macro_excelwrite: new_macro_excelwrite {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SEMI) &kp LA(ENTER) &kp LA(ENTER) &kp UP_ARROW>;
+            label = "NEW_MACRO_EXCELWRITE";
         };
     };
 
@@ -144,10 +150,10 @@
         SYMBOL {
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)  &trans  &kp INT_YEN  &kp JP_UNDERSCORE    &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
-&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp GRAVE      &trans  &kp HASH     &trans               &trans        &trans      &trans
-&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &trans         &trans  &trans       &kp PERCENT          &trans        &trans      &trans
-&trans  &trans            &trans         &trans      &trans            &trans         &trans  &trans       &trans               &trans
+&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)  &trans  &kp INT_YEN  &kp JP_UNDERSCORE  &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
+&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp GRAVE      &trans  &kp HASH     &trans             &trans        &trans      &kp F10
+&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &trans         &trans  &trans       &kp PERCENT        &trans        &trans      &trans
+&trans  &trans            &trans         &trans      &trans            &trans         &trans  &trans       &trans             &trans
             >;
 
             sensor-bindings = <
@@ -159,10 +165,10 @@
         OTHERS {
             bindings = <
 &trans  &kp LA(F4)
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &kp LA(LC(U))  &kp LA(LC(A))  &kp LA(LC(C))  &kp LA(LC(B))
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans         &trans         &trans         &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans         &trans         &trans         &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &kp LC(SEMI)  &kp LC(APOS)  &trans              &kp LG(UP_ARROW)    &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &kp LG(LEFT_ARROW)  &trans              &kp LG(RIGHT)  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans        &trans              &kp LG(DOWN_ARROW)  &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans              &trans
             >;
 
             sensor-bindings = <
