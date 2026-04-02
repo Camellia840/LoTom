@@ -82,6 +82,11 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <4 5>;
         };
+
+        gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <35 36>;
+        };
     };
 
     keymap {
