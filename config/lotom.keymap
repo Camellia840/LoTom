@@ -60,7 +60,7 @@
         new_macro_excelwrite: new_macro_excelwrite {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SEMI) &kp LA(ENTER) &kp LA(ENTER)>;
+            bindings = <&kp LC(SEMI) &kp LA(ENTER) &kp LA(ENTER) &kp F2 &kp UP_ARROW>;
             label = "NEW_MACRO_EXCELWRITE";
         };
     };
