@@ -162,7 +162,7 @@
 &trans  &trans
 &trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)  &trans  &kp INT_YEN  &kp JP_UNDERSCORE  &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
 &trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp GRAVE      &trans  &kp HASH     &trans             &trans        &trans      &kp F10
-&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &trans         &trans  &trans       &kp PERCENT        &trans        &trans      &trans
+&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &kp EQUAL      &trans  &trans       &kp PERCENT        &trans        &trans      &trans
 &trans  &trans            &trans         &trans      &trans            &trans         &trans  &trans       &trans             &trans
             >;
 
