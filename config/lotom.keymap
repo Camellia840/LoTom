@@ -83,9 +83,14 @@
             key-positions = <4 5>;
         };
 
-        gui {
+        gui1 {
             bindings = <&kp LEFT_GUI>;
             key-positions = <35 36>;
+        };
+
+        gui2 {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <28 29>;
         };
     };
 
