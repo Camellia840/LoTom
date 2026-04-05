@@ -74,7 +74,7 @@
         };
 
         combo-alt1 {
-            bindings = <&kp LEFT_ALT>;
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <12 11>;
         };
 
@@ -84,7 +84,7 @@
         };
 
         gui1 {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&kp RIGHT_GUI>;
             key-positions = <35 36>;
         };
 
