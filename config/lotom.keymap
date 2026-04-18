@@ -138,6 +138,7 @@
         };
 
         MOUSE {
+            display-name = "mouse";
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &kp PG_UP      &trans    &trans
@@ -153,6 +154,7 @@
         };
 
         NUMBER {
+            display-name = "number";
             bindings = <
 &trans            &trans
 &trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
@@ -168,6 +170,7 @@
         };
 
         SYMBOL {
+            display-name = "symbol";
             bindings = <
 &trans  &trans
 &trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)      &trans  &kp INT_YEN  &kp JP_UNDERSCORE  &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
@@ -183,6 +186,7 @@
         };
 
         CURSOR {
+            display-name = "cursor";
             bindings = <
 &trans       &trans
 &kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp END    &kp LC(R)  &kp LC(T)         &trans  &trans         &trans          &kp UP_ARROW      &trans           &trans
@@ -198,6 +202,7 @@
         };
 
         OTHERS {
+            display-name = "others";
             bindings = <
 &trans  &kp LA(F4)
 &trans  &trans        &trans        &trans        &trans        &trans        &new_macro_excelwrite  &kp LC(SEMI)  &kp LC(APOS)        &kp LG(UP_ARROW)    &trans         &trans
