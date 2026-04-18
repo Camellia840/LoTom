@@ -6,7 +6,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -142,7 +141,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &kp PG_UP      &trans    &trans
 &trans  &trans  &trans  &trans  &mkp MB1  &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB3       &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &kp PAGE_DOWN  &trans    &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &mkp MB4  &trans  &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <
