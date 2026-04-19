@@ -118,7 +118,7 @@
         };
 
         pipe {
-            bindings = <&kp D>;
+            bindings = <&kp JP_PIPE>;
             key-positions = <22 10>;
         };
 
