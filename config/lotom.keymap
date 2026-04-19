@@ -94,6 +94,13 @@
             bindings = <&kp INTERNATIONAL_5 &kp SLASH>;
             label = "MACRO_SLASH";
         };
+
+        macro_pipe: macro_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp A>;
+            label = "MACRO_PIPE";
+        };
     };
 
     combos {
