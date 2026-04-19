@@ -98,7 +98,7 @@
         macro_pipe: macro_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_5 &kp A>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_PIPE>;
             label = "MACRO_PIPE";
         };
     };
