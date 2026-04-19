@@ -81,13 +81,6 @@
             label = "NEW_MACRO_KAKKO";
         };
 
-        new_macro_excelwrite: new_macro_excelwrite {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(SEMI) &kp LA(ENTER) &kp LA(ENTER) &kp F2 &kp UP_ARROW>;
-            label = "NEW_MACRO_EXCELWRITE";
-        };
-
         macro_slash: macro_slash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
