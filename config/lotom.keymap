@@ -87,6 +87,13 @@
             bindings = <&kp LC(SEMI) &kp LA(ENTER) &kp LA(ENTER) &kp F2 &kp UP_ARROW>;
             label = "NEW_MACRO_EXCELWRITE";
         };
+
+        macro_slash: macro_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp SLASH>;
+            label = "MACRO_SLASH";
+        };
     };
 
     combos {
@@ -123,7 +130,7 @@
         };
 
         slash {
-            bindings = <&kp SLASH>;
+            bindings = <&macro_slash>;
             key-positions = <22 11>;
         };
 
