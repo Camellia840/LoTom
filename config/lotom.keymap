@@ -116,6 +116,21 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <28 29>;
         };
+
+        pipe {
+            bindings = <&kp D>;
+            key-positions = <22 10>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <22 11>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
@@ -173,10 +188,10 @@
             display-name = "symbol";
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)      &trans  &kp INT_YEN  &kp JP_UNDERSCORE  &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
-&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp JP_BACKQUOTE   &trans  &kp HASH     &trans             &trans        &trans      &kp F10
-&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &kp EQUAL          &trans  &trans       &kp PERCENT        &trans        &trans      &trans
-&trans  &trans            &trans         &trans      &trans            &trans             &trans  &trans       &trans             &trans
+&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)     &trans  &kp INT_YEN  &kp JP_UNDERSCORE  &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
+&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp JP_BACKQUOTE  &trans  &kp HASH     &trans             &trans        &trans      &kp F10
+&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &kp EQUAL         &trans  &trans       &kp PERCENT        &trans        &trans      &trans
+&trans  &trans            &trans         &trans      &trans            &trans            &trans  &trans       &trans             &trans
             >;
 
             sensor-bindings = <
