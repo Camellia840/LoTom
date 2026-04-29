@@ -140,7 +140,6 @@
         com-sequential;
         inversion-on;
         prechargep = <0x22>;
-        rotation = <270>; //追加．
     };
 };
 
