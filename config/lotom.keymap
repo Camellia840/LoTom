@@ -98,7 +98,7 @@
         Kajogaki_dot: Kajogaki_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_4 &kp SLASH &kp ENTER>;
+            bindings = <&kp INTERNATIONAL_4 &kp SLASH>;
             label = "KAJOGAKI_DOT";
         };
     };
