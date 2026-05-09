@@ -139,6 +139,11 @@
             key-positions = <22 21>;
         };
 
+        backslash {
+            bindings = <&trans>;
+            key-positions = <21 34>;
+        };
+
         under {
             bindings = <&kp A>;
             key-positions = <21 33>;
