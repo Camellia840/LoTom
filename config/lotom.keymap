@@ -145,7 +145,7 @@
         };
 
         under {
-            bindings = <&kp A>;
+            bindings = <&kp JP_UNDERSCORE>;
             key-positions = <21 33>;
         };
     };
