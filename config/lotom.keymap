@@ -154,7 +154,7 @@
         };
 
         backslash {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&trans>;
             key-positions = <21 34>;
         };
 
