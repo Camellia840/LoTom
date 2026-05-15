@@ -102,10 +102,10 @@
             label = "KAJOGAKI_DOT";
         };
 
-        entandleft: entandleft {
+        macro_entandleft: entandleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &kp LEFT_ARROW>;
+            bindings = <&kp ENTER &kp LEFT>;
             label = "ENTANDLEFT";
         };
     };
@@ -164,7 +164,7 @@
         };
 
         endandleft {
-            bindings = <&entandleft>;
+            bindings = <&macro_entandleft>;
             key-positions = <38 24>;
         };
     };
