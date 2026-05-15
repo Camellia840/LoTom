@@ -101,6 +101,13 @@
             bindings = <&kp INTERNATIONAL_4 &kp SLASH>;
             label = "KAJOGAKI_DOT";
         };
+
+        entandleft: entandleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp LEFT_ARROW>;
+            label = "ENTANDLEFT";
+        };
     };
 
     combos {
@@ -154,6 +161,11 @@
         under {
             bindings = <&kp JP_UNDERSCORE>;
             key-positions = <21 33>;
+        };
+
+        endandleft {
+            bindings = <&entandleft>;
+            key-positions = <38 24>;
         };
     };
 
