@@ -167,6 +167,11 @@
             bindings = <&macro_entandleft>;
             key-positions = <38 24>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <43 42>;
+        };
     };
 
     keymap {
