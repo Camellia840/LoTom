@@ -108,6 +108,13 @@
             bindings = <&kp ENTER &kp LEFT>;
             label = "ENTANDLEFT";
         };
+
+        doublequate: doublequate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp AT &kp AT_SIGN &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "DOUBLEQUATE";
+        };
     };
 
     combos {
@@ -172,6 +179,16 @@
             bindings = <&kp SPACE>;
             key-positions = <43 42>;
         };
+
+        marukakko {
+            bindings = <&new_macro_kakko>;
+            key-positions = <33 22>;
+        };
+
+        kagikakko {
+            bindings = <&new_macro_kagikakko>;
+            key-positions = <22 34>;
+        };
     };
 
     keymap {
@@ -229,10 +246,10 @@
             display-name = "symbol";
             bindings = <
 &trans  &trans
-&trans  &kp LS(NUMBER_1)  &kp LEFT_BRACKET  &kp HASH  &kp LS(NUMBER_4)  &kp PERCENT       &kp EQUAL      &kp LS(NUMBER_6)  &kp RS(APOS)   &kp RS(STAR)  &kp LS(N9)  &trans
-&trans  &trans            &kp AMPERSAND     &kp AT    &trans            &kp JP_BACKQUOTE  &kp QUESTION   &kp INT_YEN       &Kajogaki_dot  &trans        &kp F10     &trans
-&trans  &trans            &trans            &kp APOS  &kp SEMI          &kp EQUAL         &kp LS(EQUAL)  &trans            &trans         &trans        &trans      &trans
-&trans  &trans            &trans            &trans    &trans            &trans            &trans         &trans            &trans         &trans
+&trans  &kp LS(NUMBER_1)  &kp LEFT_BRACKET  &kp HASH      &kp LS(NUMBER_4)  &kp PERCENT       &kp EQUAL      &kp LS(NUMBER_6)  &kp RS(APOS)   &kp RS(STAR)  &kp LS(N9)  &trans
+&trans  &trans            &kp AMPERSAND     &doublequate  &trans            &kp JP_BACKQUOTE  &kp QUESTION   &kp INT_YEN       &Kajogaki_dot  &trans        &kp F10     &trans
+&trans  &trans            &trans            &kp APOS      &kp SEMI          &kp EQUAL         &kp LS(EQUAL)  &trans            &trans         &trans        &trans      &trans
+&trans  &trans            &trans            &trans        &trans            &trans            &trans         &trans            &trans         &trans
             >;
 
             sensor-bindings = <
