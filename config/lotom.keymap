@@ -189,6 +189,11 @@
             bindings = <&new_macro_kagikakko>;
             key-positions = <22 34>;
         };
+
+        minusandansco {
+            bindings = <&kp MINUS>;
+            key-positions = <24 36>;
+        };
     };
 
     keymap {
