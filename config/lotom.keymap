@@ -194,6 +194,11 @@
             bindings = <&kp MINUS>;
             key-positions = <24 36>;
         };
+
+        lefttab {
+            bindings = <&kp TAB>;
+            key-positions = <3 4>;
+        };
     };
 
     keymap {
