@@ -197,7 +197,12 @@
 
         lefttab {
             bindings = <&kp TAB>;
-            key-positions = <16 15>;
+            key-positions = <18 17>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <3 4 5 6>;
         };
     };
 
