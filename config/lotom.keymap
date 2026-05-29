@@ -170,11 +170,6 @@
             key-positions = <21 33>;
         };
 
-        endandleft {
-            bindings = <&macro_entandleft>;
-            key-positions = <38 24>;
-        };
-
         space {
             bindings = <&kp SPACE>;
             key-positions = <43 42>;
@@ -197,7 +192,7 @@
 
         lefttab {
             bindings = <&kp TAB>;
-            key-positions = <18 17>;
+            key-positions = <17 16>;
         };
 
         escape {
