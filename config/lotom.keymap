@@ -272,7 +272,7 @@
             display-name = "cursor";
             bindings = <
 &trans       &trans
-&kp LC(TAB)  &kp TAB           &trans    &kp END  &trans     &trans            &trans         &trans    &kp UP_ARROW      &kp PAGE_UP    &trans  &trans
+&kp LC(TAB)  &kp LC(TAB)       &trans    &kp END  &trans     &trans            &trans         &trans    &kp UP_ARROW      &kp PAGE_UP    &trans  &trans
 &trans       &kp LEFT_CONTROL  &kp HOME  &kp DEL  &kp RIGHT  &new_macro_ctrlK  &kp BACKSPACE  &kp LEFT  &new_macro_ctrlK  &kp RIGHT      &trans  &trans
 &trans       &trans            &trans    &trans   &trans     &trans            &trans         &trans    &kp DOWN_ARROW    &kp PAGE_DOWN  &trans  &trans
 &trans       &trans            &trans    &trans   &trans     &trans            &trans         &trans    &trans            &trans
