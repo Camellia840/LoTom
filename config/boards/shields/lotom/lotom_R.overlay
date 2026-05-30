@@ -40,6 +40,14 @@
         status = "disabled";
         device = <&trackball>;
     };
+    // ★★★ ここに追加 ★★★
+    zip_temp_layer_custom: zip_temp_layer_custom {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <1000>;
+    };
+    // ★★★ ここまで追加 ★★★
+
 };
 
 &default_transform {
@@ -74,7 +82,8 @@
 
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 1 400>;
+    //input-processors = <&zip_temp_layer 1 400>;
+    input-processors = <&zip_temp_layer_custom 1 400>;
 
     scroll {
         layers = <2>;
@@ -83,9 +92,9 @@
 };
 
 // キー入力時にオートマウスレイヤの発動を遅らせる．
-&zip_temp_layer {
-    require-prior-idle-ms = <1000>;
-};
+//&zip_temp_layer {
+//    require-prior-idle-ms = <1000>;
+//};
 
 // 右手OLED用I2C設定
 &pinctrl {
