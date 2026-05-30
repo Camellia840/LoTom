@@ -82,6 +82,11 @@
     };
 };
 
+// キー入力時にオートマウスレイヤの発動を遅らせる．
+&zip_temp_layer {
+    require-prior-idle-ms = <500>;
+};
+
 // 右手OLED用I2C設定
 &pinctrl {
     i2c0_default: i2c0_default {
