@@ -224,7 +224,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <15 16 17 18>;
+            key-positions = <15 18>;
         };
     };
 
