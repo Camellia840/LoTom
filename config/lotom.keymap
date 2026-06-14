@@ -142,6 +142,13 @@
             bindings = <&kp INTERNATIONAL_5 &kp LEFT_BRACKET>;
             label = "AT_MARK";
         };
+
+        aster: apos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp RS(APOS)>;
+            label = "APOS";
+        };
     };
 
     combos {
@@ -283,7 +290,7 @@
             display-name = "symbol";
             bindings = <
 &trans  &trans
-&trans  &kp LS(NUMBER_1)  &at_mark       &kp HASH      &kp LS(NUMBER_4)  &kp PERCENT       &kp EQUAL      &kp LS(NUMBER_6)  &kp RS(APOS)   &kp RS(STAR)  &kp LS(N9)  &trans
+&trans  &kp LS(NUMBER_1)  &at_mark       &kp HASH      &kp LS(NUMBER_4)  &kp PERCENT       &kp EQUAL      &kp LS(NUMBER_6)  &aster         &kp RS(STAR)  &kp LS(N9)  &trans
 &trans  &trans            &kp AMPERSAND  &doublequate  &trans            &kp JP_BACKQUOTE  &kp QUESTION   &kp INT_YEN       &Kajogaki_dot  &trans        &kp F10     &trans
 &trans  &trans            &trans         &kp APOS      &kp SEMI          &kp EQUAL         &kp LS(EQUAL)  &trans            &trans         &trans        &trans      &trans
 &trans  &trans            &trans         &trans        &trans            &trans            &trans         &trans            &trans         &trans
