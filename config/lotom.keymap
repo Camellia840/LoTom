@@ -50,6 +50,26 @@
 
             tap-ms = <20>;
         };
+
+        my_mt: my_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MY_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+
+        my_lt: my_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MY_LT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -94,6 +114,48 @@
             bindings = <&kp INTERNATIONAL_5 &kp JP_PIPE>;
             label = "MACRO_PIPE";
         };
+
+        Kajogaki_dot: Kajogaki_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_4 &kp SLASH>;
+            label = "KAJOGAKI_DOT";
+        };
+
+        macro_entandleft: entandleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp LEFT>;
+            label = "ENTANDLEFT";
+        };
+
+        doublequate: doublequate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp AT &kp AT_SIGN &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "DOUBLEQUATE";
+        };
+
+        at_mark: at_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LEFT_BRACKET>;
+            label = "AT_MARK";
+        };
+
+        aster: aster {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp RS(APOS)>;
+            label = "ASTER";
+        };
+
+        hash: hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp HASH>;
+            label = "HASH";
+        };
     };
 
     combos {
@@ -101,12 +163,12 @@
 
         combo-right-click {
             bindings = <&kp LS(F10)>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
         };
 
         combo-alt1 {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <12 11>;
+            key-positions = <11 10>;
         };
 
         combo-alt2 {
@@ -116,7 +178,7 @@
 
         gui1 {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <35 36>;
+            key-positions = <35 34>;
         };
 
         gui2 {
@@ -126,22 +188,57 @@
 
         pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <22 10>;
+            key-positions = <9 21>;
         };
 
         slash {
             bindings = <&macro_slash>;
-            key-positions = <22 11>;
+            key-positions = <21 10>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <22 23>;
+            key-positions = <22 21>;
         };
 
         backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <22 35>;
+            bindings = <&trans>;
+            key-positions = <21 34>;
+        };
+
+        under {
+            bindings = <&kp JP_UNDERSCORE>;
+            key-positions = <21 33>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <43 42>;
+        };
+
+        marukakko {
+            bindings = <&new_macro_kakko>;
+            key-positions = <33 22>;
+        };
+
+        kagikakko {
+            bindings = <&new_macro_kagikakko>;
+            key-positions = <22 34>;
+        };
+
+        minusandansco {
+            bindings = <&kp MINUS>;
+            key-positions = <24 36>;
+        };
+
+        lefttab {
+            bindings = <&kp TAB>;
+            key-positions = <17 16>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <15 18>;
         };
     };
 
@@ -151,11 +248,11 @@
         default_layer {
             display-name = "default";
             bindings = <
-&lt 5 ESC       &kp MINUS
-&kp TAB         &kp Q         &kp W         &kp E               &kp R        &kp T                   &none                 &kp Y                  &kp U        &kp I              &kp O    &kp P
-&mo 4           &kp A         &kp S         &kp D               &kp F        &lt 3 G                 &none                 &lt 3 H                &kp J        &kp K              &kp L    &kp RET
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V        &kp B                   &new_macro_kagikakko  &kp N                  &kp M        &kp COMMA          &kp DOT  &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 2 SPACE  &new_macro_browsnewtab  &kp BACKSPACE         &lt 1 INTERNATIONAL_4  &kp LS(F10)  &kp RIGHT_CONTROL
+&lt 5 ESC       &none
+&kp TAB         &kp TAB                &kp W         &kp E               &kp R        &kp T        &kp Y          &kp U                  &kp I              &kp O              &kp P                     &kp MINUS
+&mo 4           &my_lt 4 A             &kp S         &kp D               &kp F        &kp G        &kp H          &kp J                  &kp K              &kp L              &kp RET                   &none
+&kp LEFT_SHIFT  &my_mt LEFT_SHIFT Z    &kp X         &kp C               &kp V        &kp B        &kp N          &kp M                  &kp COMMA          &kp PERIOD         &my_mt RIGHT_SHIFT MINUS  &none
+&kp LCTRL       &my_mt LEFT_CONTROL Q  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 2 SPACE  &lt 3 SPACE  &kp BACKSPACE  &lt 1 INTERNATIONAL_4  &kp RIGHT_CONTROL  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <
@@ -168,10 +265,10 @@
             display-name = "mouse";
             bindings = <
 &trans  &trans
-&trans  &trans    &trans  &trans    &trans    &trans  &trans  &trans    &trans    &kp PG_UP      &trans    &trans
-&trans  &mkp MB4  &trans  &mkp MB3  &mkp MB1  &trans  &trans  &mkp MB4  &mkp MB1  &mkp MB3       &mkp MB2  &trans
-&trans  &trans    &trans  &trans    &trans    &trans  &trans  &trans    &trans    &kp PAGE_DOWN  &trans    &trans
-&trans  &trans    &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &kp PAGE_UP    &trans    &trans  &trans
+&trans  &mkp MB4  &mkp MB2  &mkp MB3  &mkp MB1  &trans  &mkp MB4  &mkp MB1  &mkp MB3       &mkp MB2  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &kp PAGE_DOWN  &trans    &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans         &trans
             >;
 
             sensor-bindings = <
@@ -184,10 +281,10 @@
             display-name = "number";
             bindings = <
 &trans            &trans
-&trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0
-&kp LEFT_CONTROL  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
-&trans            &trans        &trans        &kp APOS      &trans        &trans  &trans  &kp DOT       &kp LS(SEMI)  &kp MINUS     &kp LS(APOS)  &kp SLASH
-&trans            &trans        &trans        &trans        &trans        &trans  &trans  &kp PERCENT   &trans        &trans
+&trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp LEFT_CONTROL  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
+&trans            &trans        &trans        &kp APOS      &trans        &trans  &trans        &kp LS(SEMI)  &kp MINUS     &kp LS(APOS)  &kp SLASH     &trans
+&trans            &trans        &trans        &trans        &trans        &trans  &trans        &kp PERIOD    &kp PERCENT   &trans
             >;
 
             sensor-bindings = <
@@ -200,10 +297,10 @@
             display-name = "symbol";
             bindings = <
 &trans  &trans
-&trans  &kp QUESTION      &kp AT         &none       &kp LS(NUMBER_6)  &kp LS(EQUAL)     &trans  &kp INT_YEN  &kp JP_UNDERSCORE  &kp RS(STAR)  &kp RS(N9)  &kp JP_PIPE
-&trans  &kp LEFT_BRACKET  &kp AMPERSAND  &kp DOLLAR  &trans            &kp JP_BACKQUOTE  &trans  &kp HASH     &trans             &trans        &trans      &kp F10
-&trans  &kp SLASH         &kp EXCL       &kp APOS    &kp SEMI          &kp EQUAL         &trans  &trans       &kp PERCENT        &trans        &trans      &trans
-&trans  &trans            &trans         &trans      &trans            &trans            &trans  &trans       &trans             &trans
+&trans  &kp LS(NUMBER_1)  &at_mark       &hash         &kp LS(NUMBER_4)  &kp PERCENT       &kp EQUAL      &kp LS(NUMBER_6)  &aster         &kp RS(STAR)  &kp LS(N9)  &trans
+&trans  &trans            &kp AMPERSAND  &doublequate  &trans            &kp JP_BACKQUOTE  &kp QUESTION   &kp INT_YEN       &Kajogaki_dot  &trans        &kp F10     &trans
+&trans  &trans            &trans         &kp APOS      &kp SEMI          &kp EQUAL         &kp LS(EQUAL)  &trans            &trans         &trans        &trans      &trans
+&trans  &trans            &trans         &trans        &trans            &trans            &trans         &trans            &trans         &trans
             >;
 
             sensor-bindings = <
@@ -216,10 +313,10 @@
             display-name = "cursor";
             bindings = <
 &trans       &trans
-&kp LC(TAB)  &kp LC(Q)  &kp LC(W)  &kp END    &kp LC(R)  &kp LC(T)         &trans  &trans         &trans          &kp UP_ARROW      &trans           &trans
-&trans       &kp HOME   &kp LC(S)  &kp DEL    &kp RIGHT  &new_macro_ctrlK  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &new_macro_ctrlK  &kp RIGHT_ARROW  &trans
-&trans       &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)         &trans  &trans         &trans          &kp DOWN_ARROW    &trans           &trans
-&trans       &trans     &trans     &trans     &trans     &trans            &trans  &trans         &trans          &trans
+&kp LC(TAB)  &kp LC(TAB)       &kp LC(W)  &kp END    &kp LC(R)  &kp LC(T)  &trans         &trans    &kp UP_ARROW      &kp PAGE_UP    &trans  &trans
+&trans       &kp LEFT_CONTROL  &kp HOME   &kp DEL    &kp RIGHT  &trans     &kp BACKSPACE  &kp LEFT  &new_macro_ctrlK  &kp RIGHT      &trans  &trans
+&trans       &kp LC(Z)         &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans         &trans    &kp DOWN_ARROW    &kp PAGE_DOWN  &trans  &trans
+&trans       &trans            &trans     &trans     &trans     &trans     &trans         &trans    &trans            &trans
             >;
 
             sensor-bindings = <
@@ -232,15 +329,25 @@
             display-name = "others";
             bindings = <
 &trans  &kp LA(F4)
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans              &kp LG(UP_ARROW)    &trans         &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &kp LG(LEFT_ARROW)  &trans              &kp LG(RIGHT)  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans              &kp LG(DOWN_ARROW)  &trans         &trans
-&trans  &trans        &trans        &trans        &trans        &bt BT_CLR    &trans  &trans  &trans              &trans
+&trans  &trans        &trans        &trans        &trans        &new_macro_browsnewtab  &trans  &trans              &kp LG(UP_ARROW)    &kp LG(UP_ARROW)    &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &trans                  &trans  &kp LG(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)       &kp LG(RIGHT)  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans              &kp LG(DOWN)        &kp LG(DOWN_ARROW)  &trans         &trans
+&trans  &trans        &trans        &trans        &trans        &bt BT_CLR              &trans  &trans              &trans              &trans
             >;
 
             sensor-bindings = <
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
