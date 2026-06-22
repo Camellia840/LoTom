@@ -39,7 +39,7 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
 
-        #トラボ誤爆防止．最後のキー入力からAML発動までの時間
+        //トラボ誤爆防止．最後のキー入力からAML発動までの時間
         require-prior-idle-ms = <500>;
     };
 
