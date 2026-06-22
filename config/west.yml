@@ -6,6 +6,7 @@ manifest:
       url-base: https://github.com/badjeff
     - name: pukuhei
       url-base: https://github.com/pukuhei
+    #左手にdongle_displayを採用するために、englmaxiとte9noを追加した．(FIXME：両方必要か要確認．．)
     - name: englmaxi
       url-base: https://github.com/englmaxi
     - name: te9no
@@ -21,6 +22,7 @@ manifest:
     - name: zmk-tom-oled
       remote: pukuhei
       revision: main
+    # 左手にdongle_displayを採用するために、te9noを追加した
     - name: zmk-dongle-display
       remote: te9no
       revision: main
