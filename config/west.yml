@@ -12,8 +12,8 @@ manifest:
     - name: te9no
       url-base: https://github.com/te9no
     # トラックボール誤爆防止の実装を目的としてyamaryu211を追加
-    - name: yamaryu211
-      url-base: https://github.com/yamaryu211
+    #- name: yamaryu211
+    #  url-base: https://github.com/yamaryu211
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -30,8 +30,8 @@ manifest:
       remote: te9no
       revision: main
     # トラボ誤爆防止の実装を目的としてyamaryu211を追加
-    - name: zmk-input-processor-temp-layer-threshold
-      remote: yamaryu211
-      revision: main
+    #- name: zmk-input-processor-temp-layer-threshold
+    #  remote: yamaryu211
+    #  revision: main
   self:
     path: config
