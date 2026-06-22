@@ -40,6 +40,11 @@
         status = "disabled";
         device = <&trackball>;
     };
+    zip_temp_layer_idle: zip_temp_layer_idle {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <3000>;
+    };
 };
 
 &default_transform {
@@ -74,7 +79,8 @@
 
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 1 400>;
+    #input-processors = <&zip_temp_layer 1 400>;
+    input-processors = <&zip_temp_layer_idle 1 400>;
 
     scroll {
         layers = <2>;
