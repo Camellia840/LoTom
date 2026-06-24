@@ -35,6 +35,14 @@
         };
     };
 
+    zip_temp_layer_idle: zip_temp_layer_idle {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+
+        //トラボ誤爆防止．最後のキー入力からAML発動までの時間
+        require-prior-idle-ms = <750>;
+    };
+
     left_encoder_bottom: left_encoder_bottom {
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -66,7 +74,8 @@
 
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 1 400>;
+    //input-processors = <&zip_temp_layer 1 400>;
+    input-processors = <&zip_temp_layer_idle 1 400>;
 
     scroll {
         layers = <2>;
