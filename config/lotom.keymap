@@ -188,27 +188,27 @@
 
         pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <9 21>;
+            key-positions = <8 20>;
         };
 
         slash {
             bindings = <&macro_slash>;
-            key-positions = <21 10>;
+            key-positions = <20 9>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <22 21>;
+            key-positions = <21 20>;
         };
 
         backslash {
             bindings = <&trans>;
-            key-positions = <21 34>;
+            key-positions = <20 33>;
         };
 
         under {
             bindings = <&kp JP_UNDERSCORE>;
-            key-positions = <21 33>;
+            key-positions = <20 32>;
         };
 
         space {
@@ -229,11 +229,6 @@
         minusandansco {
             bindings = <&kp MINUS>;
             key-positions = <24 36>;
-        };
-
-        lefttab {
-            bindings = <&kp TAB>;
-            key-positions = <17 16>;
         };
 
         escape {
