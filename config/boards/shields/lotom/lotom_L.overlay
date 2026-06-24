@@ -40,7 +40,7 @@
         #input-processor-cells = <2>;
 
         //トラボ誤爆防止．最後のキー入力からAML発動までの時間
-        require-prior-idle-ms = <500>;
+        require-prior-idle-ms = <750>;
     };
 
     left_encoder_bottom: left_encoder_bottom {
